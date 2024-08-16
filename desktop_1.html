@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Resto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/image_1.png" alt="Logo" class="logo-img">
+                <h2>Sample Resto</h2>
+            </div>
+            <nav class="categories">
+                <button class="category-btn active" onclick="selectCategory(1)">Category 1</button>
+                <button class="category-btn" onclick="selectCategory(2)">Category 2</button>
+                <button class="category-btn" onclick="selectCategory(3)">Category 3</button>
+                <button class="category-btn" onclick="selectCategory(4)">Category 4</button>
+            </nav>
+        </aside>
+        
+        <main class="menu">
+            <header class="menu-header">
+                <h1>Sample Project</h1>
+                <input type="search" placeholder="Search for food, coffee, etc..." class="search-bar">
+            </header>
+            
+            <div class="dishes">
+                <!-- Dishes will be dynamically added here -->
+            </div>
+        </main>
+        
+        <aside class="orders">
+            <h2>Orders</h2>
+            <div class="order-summary">
+                <h3>Order Details</h3>
+                <div id="order-list" class="order-list">
+                    <!-- Order items will be dynamically added here -->
+                </div>
+                <div class="order-summary-details">
+                    <p>Discount: <span id="discount">₱0.00</span></p>
+                    <p>Subtotal: <span id="subtotal">₱0.00</span></p>
+                    <button class="send-btn" onclick="sendOrder()">Send</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
